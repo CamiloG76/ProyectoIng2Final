@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.getElementById("product-category-filter").addEventListener("change",renderProducts);
   document.getElementById("movement-product").addEventListener("change",updateMovementHint);
   document.addEventListener("click",e=>{
-     const editP=e.target.closest("[data-edit-product]");if(editP)openProductDialog(editP.dataset.editProduct);
+    const editP=e.target.closest("[data-edit-product]");if(editP)openProductDialog(editP.dataset.editProduct);
     const delP=e.target.closest("[data-delete-product]");if(delP)deleteProduct(delP.dataset.deleteProduct);
     const editC=e.target.closest("[data-edit-category]");if(editC)openCategoryDialog(editC.dataset.editCategory);
     const delC=e.target.closest("[data-delete-category]");if(delC)deleteCategory(delC.dataset.deleteCategory);
